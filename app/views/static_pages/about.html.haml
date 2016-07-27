@@ -2,15 +2,11 @@
 %h1 About
 %p
   The 
-  %a{:href=>"http://www.railstutorial.org/"}
-    %em Ruby on Rails 
+  %em= link_to "Ruby on Rails", "http://www.railstutorial.org/"
   Tutorial is a
-  %a{:href=>"http://www.railstutorial.org/book"}
-    book
+  = link_to "book", "http://www.railstutorial.org/book"
   and
-  %a{:href=>"http://screencasts.railstutorial.org/"}
-    screencast series
+  = link_to "screencast series", "http://screencasts.railstutorial.org/"
   to teach web development with
-  %a{:href=>"http://rubyonrails.org/"}
-    Ruby on Rails
+  = link_to "Ruby on Rails", "http://rubyonrails.org/"
   This is the sample application for the tutorial.

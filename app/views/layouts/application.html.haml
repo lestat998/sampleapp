@@ -7,6 +7,10 @@
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
+    
   %body
-    = yield 
-Contact GitHub API Training Shop Blog About
+    = render 'layouts/header'
+    %div{:class=>"container"}
+      = yield 
+      = render 'layouts/footer'
+
