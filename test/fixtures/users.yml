@@ -1,3 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
+javier:
+  name: Javier Jimenez
+  email: lestat998@gmail.com
+  password_digest: <%= User.digest('password') %>
+#javier:
+# name: Javier Jimenez
+# email: lestat998@gmail.com
+# password_digest: <%= User.digest('password') %>
 
