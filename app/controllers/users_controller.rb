@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+
+  before_action :logger_in_user, only: [:edit, :update]
   
   def show
   	@user = User.find(params[:id])
@@ -18,6 +20,27 @@ class UsersController < ApplicationController
   	else
   		render 'new'
   	end
+  end
+
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(user_params)
+      flash[:success] = "Update success"
+      redirect_to @user
+    else
+      render 'edit'
+    end
+  end
+
+  def logger_in_user
+    unless logged_in?
+      flash[:danger] = "Please log in."
+      redirect_to login_url
+    end
   end
 
 private
