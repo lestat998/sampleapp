@@ -3,8 +3,8 @@ javier:
   name: Javier Jimenez
   email: lestat998@gmail.com
   password_digest: <%= User.digest('password') %>
-#javier:
-# name: Javier Jimenez
-# email: lestat998@gmail.com
-# password_digest: <%= User.digest('password') %>
 
+hector:
+  name: hector Carrillo
+  email: carfane@gmail.com
+  password_digest: <%= User.digest('password') %>
