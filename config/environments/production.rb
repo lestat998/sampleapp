@@ -31,7 +31,7 @@ Rails.application.configure do
   # config.action_controller.asset_host = 'http://assets.example.com'
   config.action_mailer.raise_delivery_errors = true
     config.action_mailer.delivery_method = :smtp
-    host = 'https://obscure-dawn-61289.herokuapp.com'
+    host = 'obscure-dawn-61289.herokuapp.com'
     config.action_mailer.default_url_options = { host: host }
     ActionMailer::Base.smtp_settings = {
       :address        => 'smtp.sendgrid.net',
