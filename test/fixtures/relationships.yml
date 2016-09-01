@@ -1,0 +1,15 @@
+one:
+  follower: javier
+  followed: archer
+
+two:
+  follower: javier
+  followed: malory
+
+three:
+  follower: archer
+  followed: javier
+
+four:
+  follower: hector
+  followed: javier
